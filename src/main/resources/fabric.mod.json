@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cowow",
+	"version": "${version}",
+	"name": "cowow",
+	"description": "cowow",
+	"authors": [
+		"emajiro"
+	],
+	"contact": {
+		"homepage": "https://www.youtube.com/watch?v=dQw4w9WgXcQ/",
+		"sources": "https://github.com/emajiro/cowow"
+	},
+	"license": "MIT",
+	"icon": "assets/cowow/icon.png",
+	"environment": "*",
+	"entrypoints": {
+      "client": [
+        "net.emajiro.cowow.CowowClient"
+      ],
+      "fabric-datagen": [
+        "net.emajiro.cowow.CowowDataGenerator"
+      ],
+      "main": [
+        "net.emajiro.cowow.Cowow"
+      ]
+    },
+  "mixins": [
+		"cowow.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
